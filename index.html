@@ -1,20 +1,87 @@
-<h1> Hello I'm Minnal </h1>
-<table style="border:1px solid black;width:100%">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<div style="font-family:tahoma, sans-serif">
+<h1 style="text-align:center">hi, i'm minnal!</h1>
+<table style="border:1px solid black;width:100%;padding-right:15px;padding-top:15px;padding-bottom:15px;padding-left:5px;margin:auto;">
     <tr>
-        <td style="text-align:left">
-            <span style='color:white'>(this line is left intentionally blank)</span>
+        <td rowspan="2" style="text-align:center;padding:10px">
+            i'm a year two information systems student at smu!
+            <br><br>
+            i like to say that my hobby is watching movies,
+            but the reality is that i haven't had the time and attention span to watch a movie since june.
+            i <i>have</i> somehow managed to read several manga over the holidays, which i will gladly talk about if anyone is interested. (anyone else a fan of nanami kento from jujutsu kaisen...? no...????)
         </td>
         <td>
-            <img src="placeholder">
+            <img src="pic.JPG" width="220px">
+        </td>
+    </tr>
+    <tr>
+        <td width="40px" style="text-align:center">
+            <i>sorry i no pics of myself...</i>
         </td>
     </tr>
 </table>
 
 <br><br><br>
-<table style="border:1px solid black;width:100%">
-    <tr>
-        <td colspan="2">
-            hi my name is minnal!
-        </td>
-    </tr>
-</table>
+
+<form method="post">
+
+    <table style="border: 3px solid pink;padding:10px;margin: auto;width: 60%;
+        }">
+        <tr>
+            <td colspan="2" style="text-align:center;padding:10px">
+                thank you for visiting! tell me about yourself ☺<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <td><input type="text" placeholder="name please!"></td>
+        </tr>
+        <tr>
+            <th>Relationship Status:</th>
+            <td>
+                <input type="radio" id="single" name="rs" value="single">
+                <label for="single">single</label><br>
+                <input type="radio" id="taken" name="rs" value="taken">
+                <label for="taken">taken</label><br>
+                <input type="radio" id="downbad" name="rs" value="downbad">
+                <label for="downbad" style="font-family:'baskerville',serif;font-style:italic;font-size:20px">~Down Bad~</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Favourite Fruits</th>
+            <td>
+                <input type="checkbox" id="mango" name="fruit1" value="Mango">
+                <label for="mango">Mango</label><br>
+                <input type="checkbox" id="strawberry" name="fruit2" value="Strawberry">
+                <label for="strawberry">Strawberry</label><br>
+                <input type="checkbox" id="watermelon" name="fruit3" value="Boat">
+                <label for="watermelon">Watermelon</label><br>
+                <input type="checkbox" id="lychee" name="fruit4" value="Lychee">
+                <label for="lychee">Lychee</label><br>
+                <input type="checkbox" id="none" name="fruit5" value="None">
+                <label for="none">None of the above because i have bad taste and im proud of it! 😤😤😤</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Submit?</th>
+            <td><input type="submit" value="yes please!"></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+
+<style>
+
+th {
+    text-align:right;
+    color:mediumslateblue;
+    padding:10px;
+    font-style:italic;
+}
+
+</style>
