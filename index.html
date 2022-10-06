@@ -1,87 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>minnal 🔆</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
+
+        a {
+            color:white;
+        }
+        a:hover {
+            color: #b3896d
+        }
+
+        body {
+            background: #361b09;
+            color:white;
+            font-family: montserrat;
+            font-size: 15px;
+        }
+
+        body1 {
+            font-family: montserrat;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: #361b09;
+            line-height: 1.7;
+            color: #fff;
+            transform: skewY(-5deg);
+            }
+        .bg-text-container {
+            transform: translateX(-50%);
+            left: 50%;
+            position: absolute;
+            z-index: -999;
+            }
+        @keyframes text-scrolling {
+            0% {
+                transform: translate3d(-100%, 0, 0);
+            }
+            100% {
+                transform: translate3d(0%, 0, 0);
+            }
+        }
+        .animate-text {
+            animation: text-scrolling 20s linear infinite;
+            will-change: transform;
+            display: block;
+            position: relative;
+            white-space: nowrap;
+            }
+        .animate-text.left {
+            animation-direction: reverse;
+            }
+        span {
+            font-size: 280px;
+            color: transparent;
+            -webkit-text-stroke: 2px #6e3d3a;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 0.75;
+            min-width: auto;
+            font-weight: 20000;
+            }
+        .container {
+            padding: 30px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            }
+        .container .col {
+            max-width: 600px;
+            margin: 0;
+            }
+        h1 {
+            font-size: 90px;
+            margin: 0;
+            font-weight:bolder;
+            color: #b3896d;
+            }
+
+        bonk {
+            text-transform: capitalize;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 200px;
+            overflow-wrap:normal
+        }
+        
+    </style>
 </head>
-
 <body>
-<div style="font-family:tahoma, sans-serif">
-<h1 style="text-align:center">hi, i'm minnal!</h1>
-<table style="border:1px solid black;width:100%;padding-right:15px;padding-top:15px;padding-bottom:15px;padding-left:5px;margin:auto;">
-    <tr>
-        <td rowspan="2" style="text-align:center;padding:10px">
-            i'm a year two information systems student at smu!
-            <br><br>
-            i like to say that my hobby is watching movies,
-            but the reality is that i haven't had the time and attention span to watch a movie since june.
-            i <i>have</i> somehow managed to read several manga over the holidays, which i will gladly talk about if anyone is interested. (anyone else a fan of nanami kento from jujutsu kaisen...? no...????)
-        </td>
-        <td>
-            <img src="pic.JPG" width="220px">
-        </td>
-    </tr>
-    <tr>
-        <td width="40px" style="text-align:center">
-            <i>sorry i no pics of myself...</i>
-        </td>
-    </tr>
-</table>
 
-<br><br><br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0197fb5c69.js" crossorigin="anonymous"></script>    
+    <div style="margin:auto;text-align: center;padding-top: 20px;z-index: -1">
+        <a href="https://linkedin.com/in/minnalk"><i class="fa-brands fa-linkedin" style="font-size:20px;padding-right:10px;"></i></a>
+        <a href="https://github.com/minnalk"><i class="fa-brands fa-github" style="font-size:20px"></i></a>
+    </div>
 
-<form method="post">
+    <body1>
+        <div class="bg-text-container">
+        <div class="animate-text left">
+            <span>Minnal K Dhayalan&nbsp;</span>
+            <span>Minnal K Dhayalan&nbsp;</span>
+        </div>
+        <div class="animate-text left">
+            <span>Dhayalan Minnal K &nbsp;</span>
+            <span>Dhayalan Minnal K &nbsp;</span>
+        </div>
+        </div>
+        
+        
+        
+        <div class="container">
+            <div class="col">
+                <h1>Welcome!</h1>
+                
+                <p>
+                    I'm <b>Minnal</b>, a second-year Information Systems student at Singapore Management University.
+                    Currently, I'm interested in Product and UI/UX Design.
+                    <br><br>Keep scrolling to find out more about me!
+                </p>
+            </div>
+        </div>
+    </body1>
 
-    <table style="border: 3px solid pink;padding:10px;margin: auto;width: 60%;
-        }">
-        <tr>
-            <td colspan="2" style="text-align:center;padding:10px">
-                thank you for visiting! tell me about yourself ☺<br>
-            </td>
-        </tr>
-        <tr>
-            <th>Name:</th>
-            <td><input type="text" placeholder="name please!"></td>
-        </tr>
-        <tr>
-            <th>Relationship Status:</th>
-            <td>
-                <input type="radio" id="single" name="rs" value="single">
-                <label for="single">single</label><br>
-                <input type="radio" id="taken" name="rs" value="taken">
-                <label for="taken">taken</label><br>
-                <input type="radio" id="downbad" name="rs" value="downbad">
-                <label for="downbad" style="font-family:'baskerville',serif;font-style:italic;font-size:20px">~Down Bad~</label>
-            </td>
-        </tr>
-        <tr>
-            <th>Favourite Fruits</th>
-            <td>
-                <input type="checkbox" id="mango" name="fruit1" value="Mango">
-                <label for="mango">Mango</label><br>
-                <input type="checkbox" id="strawberry" name="fruit2" value="Strawberry">
-                <label for="strawberry">Strawberry</label><br>
-                <input type="checkbox" id="watermelon" name="fruit3" value="Boat">
-                <label for="watermelon">Watermelon</label><br>
-                <input type="checkbox" id="lychee" name="fruit4" value="Lychee">
-                <label for="lychee">Lychee</label><br>
-                <input type="checkbox" id="none" name="fruit5" value="None">
-                <label for="none">None of the above because i have bad taste and im proud of it! 😤😤😤</label>
-            </td>
-        </tr>
-        <tr>
-            <th>Submit?</th>
-            <td><input type="submit" value="yes please!"></td>
-        </tr>
-    </table>
-</form>
-</div>
+    <div style="padding:20px;text-align: center"><br>
+        <div style="width:400px;margin:auto">
+            <p style="font-style:italic">10% of programmers know everything, the other 90% of us are just leeching off them.</p>
+            <p style="text-align:right;"><b>– My friend Valerie</b><br>(who is Very Correct... I'm the leech)</p>
+        </div>
+    </div>
+
 </body>
 
-<style>
+<script>
 
-th {
-    text-align:right;
-    color:mediumslateblue;
-    padding:10px;
-    font-style:italic;
-}
+/* Set width of all animated text to match container */
+let parent = document.querySelectorAll('.animate-text');
+for(let i = 0; i < parent.length; i++) {
+  parent[i].style.width = parent[i].children[0].clientWidth + "px"; 
+};
+</script>
 
-</style>
+</body>
+</html>
